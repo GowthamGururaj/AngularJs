@@ -1,0 +1,41 @@
+<div ng-controller="HomeController">
+
+    <div class="input-container">
+        <label class="input-container-label">Input Directive</label>
+        <input-directive type="text" model="inputModel.data" label="Name"></input-directive>
+        {{inputModel.data}}
+        <input-directive type="text" model="inputModel.data2" max=30></input-directive>
+        {{inputModel.data2}}
+        <input-directive type="text" model="inputModel.data3" label="Name" max=30></input-directive>
+        {{inputModel.data3}}
+        <input-directive type="text" model="inputModel.data4"></input-directive>
+        {{inputModel.data4}}
+    </div>
+
+    <div class="input-container">
+        <label class="input-container-label">Textarea Directive</label>
+        <textarea-directive model="textareaModel.data" label="textarea"></textarea-directive>
+        {{textareaModel.data}}
+        <textarea-directive model="textareaModel.data2" label="textarea" max="150"></textarea-directive>
+        {{textareaModel.data2}}
+        <textarea-directive model="textareaModel.data3" max="150"></textarea-directive>
+        {{textareaModel.data3}}
+        <textarea-directive model="textareaModel.data4"></textarea-directive>
+        {{textareaModel.data4}}
+    </div>
+
+    <div class="input-container">
+        <label class="input-container-label">Dropdown Directive</label>
+        <dropdown-directive model="dropdownModel.data" values="sampleData" label="Numbers"></dropdown-directive>
+        {{dropdownModel.data}}
+        <dropdown-directive model="dropdownModel.data2" values="sampleData"></dropdown-directive>
+        {{dropdownModel.data2}}
+    </div>
+
+    <div class="input-container">
+        <label class="input-container-label">Checkbox Directive</label>
+        <checkbox-directive model="checkboxModel.selected" text="sampleData"></checkbox-directive>
+        {{checkboxModel.selected}}
+    </div>
+
+</div>

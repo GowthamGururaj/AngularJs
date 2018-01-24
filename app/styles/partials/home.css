@@ -1,0 +1,10 @@
+.input-container {
+    padding: 2% 0 0 2%;
+    width: 50%;
+}
+
+.input-container-label {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
